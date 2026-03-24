@@ -33,8 +33,14 @@ class Program
         g1.AfficherEtat(); 
         m1.AfficherEtat();
 
+        // Creation d'une liste de personnages et ajout du guerrier et du magicien à la liste
+        List<Personnage> personnages = new List<Personnage>{g1, m1};         
 
-
-
+        // Affichage de la liste des personnages
+        foreach (var personnage in personnages)
+        {
+            // Console.Write($"Personnage dans la liste:"); 
+            personnage.AfficherEtat();
+        }
     }
 }

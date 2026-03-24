@@ -14,18 +14,20 @@ class Program
         
         p1.AfficherEtat();
 
-        // Partie 6 : Le personnage reçoit des dégâts avec une réduction de 25  
+        // Partie 5 : Le personnage reçoit des dégâts mais les pointts de vie diminuent moins 
         p1.RecevoirDegats(50,25);
 
         p1.AfficherEtat();
 
         //Création d'un guerrier 
 
-        Personnage g1 = new Guerrier ("Guts", 200, 100);
+        Guerrier g1 = new Guerrier ("Guts", 200, 100);
+        g1.GuerrierAttaquer(50); 
 
         // Création d'un magicien 
 
-        Personnage m1 = new Magicien ("Geralt de Riv", 200, 100);
+        Magicien m1 = new Magicien ("Geralt de Riv", 200, 100);
+        m1.LancerSort(30);
 
         // Affichage de l'état du guerrier et du magicien
         g1.AfficherEtat(); 

@@ -7,12 +7,12 @@ public class Magicien : Personnage
         this.mana = mana;
     }
 
-    public void UtiliserSort(int coutMana)
+    public void LancerSort(int coutMana)
     {
         if (mana >= coutMana)
         {
             mana -= coutMana;
-            Console.WriteLine($"{GetNom()} a utilisé un sort et a dépensé {coutMana} points de mana.");
+            Console.WriteLine($"{GetNom()} a utilisé un sort et a utilisé {coutMana} points de mana.");
         }
         else
         {

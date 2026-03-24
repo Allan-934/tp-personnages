@@ -2,7 +2,7 @@ public class Magicien : Personnage
 {
     private int mana { get; set; }
 
-    public Magicien(string nom, int pointDeVie, int mana) : base(nom, pointDeVie)
+    public Magicien(string nom, int pointDeVie, int mana) : base(nom, pointDeVie) 
     {
         this.mana = mana;
     }

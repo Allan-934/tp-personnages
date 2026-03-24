@@ -1,0 +1,28 @@
+public class Magicien : Personnage
+{
+    private int mana { get; set; }
+
+    public Magicien(string nom, int pointDeVie, int mana) : base(nom, pointDeVie)
+    {
+        this.mana = mana;
+    }
+
+    public void UtiliserSort(int coutMana)
+    {
+        if (mana >= coutMana)
+        {
+            mana -= coutMana;
+            Console.WriteLine($"{GetNom()} a utilisé un sort et a dépensé {coutMana} points de mana.");
+        }
+        else
+        {
+            Console.WriteLine($"{GetNom()} n'a pas assez de mana pour utiliser ce sort.");
+        }
+    }
+
+    public void Magicien_AfficherEtat()
+    {
+        base.AfficherEtat();
+        Console.WriteLine($"Mana: {mana}");
+    }
+}

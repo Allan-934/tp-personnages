@@ -17,9 +17,8 @@ public class Guerrier : Personnage
         ReccevoirDegats(degatsReduits);
     }
 
-    public void Guerrier_AfficherEtat()
+    public override void AfficherEtat()
     {
-        base.AfficherEtat();
-        Console.WriteLine($"Armure: {armure}");
+        Console.WriteLine($"Nom: {nom}, Hp: {pointDeVie}, Armure: {armure}");
     }
 }

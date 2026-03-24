@@ -15,16 +15,16 @@ class Program
 
         //Création d'un guerrier 
 
-        Guerrier g1 = new Guerrier ("Guts", 200, 100);
+        Personnage g1 = new Guerrier ("Guts", 200, 100);
 
         // Création d'un magicien 
 
-        Magicien m1 = new Magicien ("Geralt de Riv", 200, 100);
+        Personnage m1 = new Magicien ("Geralt de Riv", 200, 100);
 
         // Affichage de l'état du guerrier et du magicien
-        g1.Guerrier_AfficherEtat();
-        m1.Magicien_AfficherEtat();
-        
+        g1.AfficherEtat(); 
+        m1.AfficherEtat();
+
 
 
 

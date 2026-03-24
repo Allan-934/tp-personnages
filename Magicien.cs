@@ -20,9 +20,9 @@ public class Magicien : Personnage
         }
     }
 
-    public void Magicien_AfficherEtat()
+    public override void AfficherEtat()
     {
-        base.AfficherEtat();
-        Console.WriteLine($"Mana: {mana}");
+        ;
+        Console.WriteLine($"Nom: {nom}, Hp: {pointDeVie}, Mana: {mana}");
     }
 }

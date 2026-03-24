@@ -37,8 +37,8 @@ public class Personnage
         }
     }
     // Méthode pour afficher l'état actuel du personnage
-    public void AfficherEtat()
+    public virtual void AfficherEtat()
     {
-        Console.WriteLine($"Nom: {nom}, Point de Vie: {pointDeVie}");
+        Console.WriteLine($"Nom: {nom}, Hp: {pointDeVie}");
     }
 }

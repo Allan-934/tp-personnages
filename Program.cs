@@ -9,8 +9,14 @@ class Program
 
         p1.AfficherEtat();
 
+        // Partie 5 : Le personnage reçoit des dégâts
         p1.ReccevoirDegats(100); 
         
+        p1.AfficherEtat();
+
+        // Partie 6 : Le personnage reçoit des dégâts avec une réduction de 25  
+        p1.RecevoirDegats(50,25);
+
         p1.AfficherEtat();
 
         //Création d'un guerrier 

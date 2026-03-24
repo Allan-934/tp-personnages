@@ -36,6 +36,17 @@ public class Personnage
             pointDeVie = 0;
         }
     }
+
+    public void RecevoirDegats(int degats, int reduction)
+    {
+        pointDeVie -= degats;
+        pointDeVie += reduction;
+        if (pointDeVie < 0)
+        {
+            pointDeVie = 0;
+        }
+    }
+
     // Méthode pour afficher l'état actuel du personnage
     public virtual void AfficherEtat()
     {

@@ -40,7 +40,16 @@ class Program
         foreach (var personnage in personnages)
         { 
             personnage.AfficherEtat();
-            personnage.Attaquer(20); 
+
+            if (personnage is Guerrier g)
+            {
+                g.Attaquer(20);
+            }
+            
+            else if (personnage is Magicien m)
+            {
+                m.LancerSort(10);
+            }
         }
     }
 }

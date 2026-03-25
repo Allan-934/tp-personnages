@@ -45,6 +45,12 @@ public class Personnage
         if (pointDeVie < 0) pointDeVie = 0;
     }
 
+    // Ajout de la methode ToString 
+    public override string ToString()
+    {
+        return $"Nom: {nom}, Hp: {pointDeVie}"; 
+    }
+
     // Méthode pour afficher l'état actuel du personnage
     public virtual void AfficherEtat()
     {

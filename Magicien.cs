@@ -20,6 +20,12 @@ public class Magicien : Personnage
         }
     }
 
+    // Ajout de la methode ToString 
+    public override string ToString()
+    {
+        return $"Nom: {nom}, Hp: {pointDeVie}, Mana: {mana}"; 
+    }
+
     public override void AfficherEtat()
     {
         Console.WriteLine($"Nom: {nom}, Hp: {pointDeVie}, Mana: {mana}");

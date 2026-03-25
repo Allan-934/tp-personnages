@@ -22,6 +22,12 @@ public class Guerrier : Personnage
         Console.WriteLine($"{GetNom()} attaque avec {Attaque} pts d'attaque.");
     }
 
+    // Ajout de la methode ToString 
+    public override string ToString()
+    {
+        return $"Nom: {nom}, Hp: {pointDeVie}, Armure: {armure}"; 
+    }
+
     public override void AfficherEtat()
     {
         Console.WriteLine($"Nom: {nom}, Hp: {pointDeVie}, Armure: {armure}");

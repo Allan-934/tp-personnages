@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("tp-personnages")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+11503024b90192ef6ca4a29f6f078ba321b362d4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d6c47fd04312d1530c51999d2e3aea006ca623a6")]
 [assembly: System.Reflection.AssemblyProductAttribute("tp-personnages")]
 [assembly: System.Reflection.AssemblyTitleAttribute("tp-personnages")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

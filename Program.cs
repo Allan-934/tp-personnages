@@ -61,5 +61,13 @@ class Program
                 m.LancerSort(10);
             }
         }
+
+        // Appe lde la méthode ToString pour chaque personnage
+        Console.WriteLine(p1);
+        Console.WriteLine(g1);
+        Console.WriteLine(m1);
+         
+
+        
     }
 }

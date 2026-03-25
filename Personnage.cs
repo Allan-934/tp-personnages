@@ -28,7 +28,7 @@ public class Personnage
         this.pointDeVie = pointDeVie;
     }
     // Méthode pour recevoir des dégâts et réduire les points de vie du personnage
-    public void ReccevoirDegats(int degats)
+    public void RecevoirDegats(int degats)
     {
         pointDeVie -= degats;
         if (pointDeVie < 0)
@@ -39,12 +39,10 @@ public class Personnage
 
     public void RecevoirDegats(int degats, int reduction)
     {
-        pointDeVie -= degats;
-        pointDeVie += reduction;
-        if (pointDeVie < 0)
-        {
-            pointDeVie = 0;
-        }
+        int degatsReduits = degats - reduction; 
+        if (degatsReduits < 0) degatsReduits = 0;
+        pointDeVie -= degatsReduits;
+        if (pointDeVie < 0) pointDeVie = 0;
     }
 
     // Méthode pour afficher l'état actuel du personnage

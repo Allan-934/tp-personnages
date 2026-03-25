@@ -22,7 +22,6 @@ public class Magicien : Personnage
 
     public override void AfficherEtat()
     {
-        ;
         Console.WriteLine($"Nom: {nom}, Hp: {pointDeVie}, Mana: {mana}");
     }
 }

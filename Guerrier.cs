@@ -14,7 +14,7 @@ public class Guerrier : Personnage
         {
             degatsReduits = 0;
         }
-        ReccevoirDegats(degatsReduits);
+        RecevoirDegats(degatsReduits);
     }
 
     public void Attaquer(int Attaque)

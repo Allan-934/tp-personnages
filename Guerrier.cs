@@ -17,7 +17,7 @@ public class Guerrier : Personnage
         ReccevoirDegats(degatsReduits);
     }
 
-    public void GuerrierAttaquer(int Attaque)
+    public void Attaquer(int Attaque)
     {
         Console.WriteLine($"{GetNom()} attaque avec {Attaque} pts d'attaque.");
     }

@@ -22,7 +22,7 @@ class Program
         //Création d'un guerrier 
 
         Guerrier g1 = new Guerrier ("Guts", 200, 100);
-        g1.GuerrierAttaquer(50); 
+        g1.Attaquer(50); 
 
         // Création d'un magicien 
 
@@ -38,9 +38,9 @@ class Program
 
         // Affichage de la liste des personnages
         foreach (var personnage in personnages)
-        {
-            // Console.Write($"Personnage dans la liste:"); 
+        { 
             personnage.AfficherEtat();
+            personnage.Attaquer(20); 
         }
     }
 }

@@ -65,9 +65,18 @@ class Program
         // Appe lde la méthode ToString pour chaque personnage
         Console.WriteLine(p1);
         Console.WriteLine(g1);
-        Console.WriteLine(m1);
-         
+        Console.WriteLine(m1.ToString());
 
-        
+        // Création d'un archer
+        Archer a1 = new Archer("Legolas", 200, 80);
+
+        //Ajout de l'archer à la liste des personnages
+        Personnage pers3 = a1;
+        personnages.Add(pers3);
+
+        // Affichage de l'état de l'archer et sa précision
+        Console.WriteLine(a1); 
+        a1.Tirer(50);
+
     }
 }
